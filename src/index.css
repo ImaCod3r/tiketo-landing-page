@@ -26,6 +26,7 @@ header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .logo img {
@@ -48,6 +49,20 @@ header nav {
 }
 
 .nav-links li a:hover {
+    color: #fff;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #ffffffc0;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.hamburger:hover {
     color: #fff;
 }
 
@@ -114,6 +129,8 @@ header nav {
 section {
     padding: 4rem 5rem;
 }
+
+/* Sobre */
 
 #about {
     background-color: #fff;
@@ -279,11 +296,97 @@ footer {
     color: #c6c6c6;
     cursor: pointer;
     text-decoration: none;
-    transition: color 0.3s ease;    
+    transition: color 0.3s ease;
 }
 
 .col ul li a:hover {
     color: #fff;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding-inline: 2rem;
+    }
+
+    .nav-links {
+        width: 100%;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+        z-index: 10;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero {
+        text-align: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .hero .buttons {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        max-width: 100%;
+    }
+
+    .hero img {
+        width: 300px;
+    }
+
+    #about .content {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .content img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #organizers .content img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+
+    footer .footer-grid {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    footer div:last-child {
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
 
 @keyframes floating {
