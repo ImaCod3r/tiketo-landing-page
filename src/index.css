@@ -103,6 +103,14 @@ nav .logo img {
     background-color: #f0f0f0e0;
 }
 
+#line {
+    width: 80%;
+    height: 1px;
+    background-color: #c6c6c6;
+    margin: 4rem auto;
+
+}
+
 section {
     padding: 4rem 5rem;
 }
@@ -136,7 +144,7 @@ section {
     gap: 2rem;
 }
 
-#about .content p {
+.content p {
     margin-bottom: 1rem;
     font-weight: 400;
 }
@@ -164,13 +172,41 @@ section {
     background-color: #6a2c9e;
 }
 
+/* Organizadores */
+#organizers .content {
+    display: flex;
+    gap: 2rem;
+}
+
+#organizers .content img {
+    width: 400px;
+    height: auto;
+
+    border-radius: 12px;
+}
+
+#organizer-button {
+    margin: 1rem 0;
+    background-color: #823BBF;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
 @keyframes floating {
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-20px);
     }
+
     100% {
         transform: translateY(0);
     }
