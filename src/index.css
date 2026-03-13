@@ -137,7 +137,6 @@ section {
     margin-bottom: 15px;
 }
 
-
 #about .content {
     margin-bottom: 1rem;
     display: flex;
@@ -170,6 +169,60 @@ section {
 
 .contact-button:hover {
     background-color: #6a2c9e;
+}
+
+/* Como funciona */
+.biglist {
+    margin: 2rem 0;
+}
+
+.biglist .line {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.line span {
+    font-size: 32px;
+    font-weight: 700;
+    color: #823BBF;
+    min-width: 25px;
+}
+
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.payment-methods ul {
+    list-style: none;
+}
+
+.payment-methods ul li {
+    margin-bottom: 1rem;
+}
+
+.payment-methods img {
+    width: 400px;
+    height: auto;
+}
+
+.payment-methods p {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.payment-methods p a {
+    color: #823BBF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.payment-methods p a:hover {
+    text-decoration: underline;
 }
 
 /* Organizadores */
