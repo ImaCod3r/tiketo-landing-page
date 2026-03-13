@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-image: url("./assets/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+
+    min-height: 100vh;
+    padding: 2.5rem 5rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo img {
+    width: 120px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-size: 14px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffffc0;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-links li a:hover {
+    color: #fff;
+}
+
+.hero {
+    margin-top: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #fff;
+    max-width: 600px;
+    line-height: 1.2;
+}
+
+.hero p {
+    margin-top: 16px;
+    font-size: 18px;
+    color: #ffffffc0;
+    max-width: 500px;
+    line-height: 1.5;
+}
+
+.hero img {
+    width: 400px;
+    height: auto;
+}
+
+.hero .buttons {
+    margin-top: 18px;
+    display: flex;
+    gap: 1rem;
+}
+
+.hero .buttons button {
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: .8rem 1rem;
+    border: none;
+    font-size: 16px;
+
+    color: #823BBF;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero .buttons button:hover {
+    background-color: #f0f0f0e0;
+}
