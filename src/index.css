@@ -102,3 +102,76 @@ nav .logo img {
 .hero .buttons button:hover {
     background-color: #f0f0f0e0;
 }
+
+section {
+    padding: 4rem 5rem;
+}
+
+#about {
+    background-color: #fff;
+    width: 100%;
+}
+
+.tittle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title p {
+    color: #555;
+    font-size: 18px;
+}
+
+.title h2 {
+    color: #823BBF;
+    font-size: 46px;
+    margin-bottom: 15px;
+}
+
+
+#about .content {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 2rem;
+}
+
+#about .content p {
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+#about .content img {
+    width: 400px;
+    height: auto;
+
+    animation: floating 3s ease-in-out infinite;
+}
+
+.contact-button {
+    margin-top: 1rem;
+    background-color: #823BBF;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #6a2c9e;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
