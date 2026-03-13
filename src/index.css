@@ -28,7 +28,7 @@ header nav {
     justify-content: space-between;
 }
 
-nav .logo img {
+.logo img {
     width: 120px;
 }
 
@@ -250,6 +250,41 @@ section {
     transition: background-color 0.3s ease;
 }
 
+/* Rodape */
+footer {
+    background-color: hsl(0, 0%, 20%);
+    padding: 5rem 5rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.col h3 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.footer-grid .col ul {
+    list-style: none;
+}
+
+.col ul li a {
+    font-size: 14px;
+    color: #c6c6c6;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s ease;    
+}
+
+.col ul li a:hover {
+    color: #fff;
+}
 
 @keyframes floating {
     0% {

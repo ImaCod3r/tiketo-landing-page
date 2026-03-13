@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import HowItWorks from "../components/HowItWorks";
 import Organizers from "../components/Organizers";
+import Footer from "../components/Footer";
 
 function Home() {
     return (
@@ -18,6 +19,7 @@ function Home() {
                 <div id="line" />
                 <Organizers />
             </main>
+            <Footer />
         </>
     )
 }
