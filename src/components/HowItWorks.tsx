@@ -1,6 +1,6 @@
 function HowItWorks() {
     return (
-        <section id="how-it-works">
+        <section id="howitworks">
             <div className="title">
                 <p>Agora você precisa entender</p>
                 <h2>Como funciona</h2>

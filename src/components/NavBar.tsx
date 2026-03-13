@@ -9,16 +9,24 @@ function NavBar() {
 
             <ul className="nav-links">
                 <li>
-                    <Link to="hero">Início</Link>
+                    <Link to="hero" smooth={true} duration={500}>
+                        Início
+                    </Link>
                 </li>
                 <li>
-                    <Link to="">Como funciona</Link>
+                    <Link to="howitworks" smooth={true} duration={500}>
+                        Como funciona
+                    </Link>
                 </li>
                 <li>
-                    <Link to="">Organizadores</Link>
+                    <Link to="organizers" smooth={true} duration={500}>
+                        Organizadores
+                    </Link>
                 </li>
                 <li>
-                    <Link to="">Contactos</Link>
+                    <Link to="contact" smooth={true} duration={500}>
+                        Contactos
+                    </Link>
                 </li>
             </ul>
         </nav>
