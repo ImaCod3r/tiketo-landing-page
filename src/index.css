@@ -304,11 +304,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-    body {
-        width: 100vw;
-        overflow-x: hidden;
-    }
-
     header {
         padding-inline: 2rem;
     }
@@ -373,6 +368,10 @@ footer {
     #organizers .content img {
         width: 100%;
         max-width: 400px;
+    }
+
+    .payment-methods img {
+        width: 200px;
     }
 
     section {

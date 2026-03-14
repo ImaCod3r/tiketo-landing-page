@@ -1,13 +1,28 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/tiketo_favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tiketo</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+<head>
+  <title>Tiketo - Venda e gerencie seus eventos</title>
+  <meta name="description" content="Crie eventos, venda ingressos e acompanhe tudo em um lugar." />
+  <meta property="og:title" content="Tiketo" />
+  <meta property="og:description" content="Crie eventos, venda ingressos e acompanhe tudo em um lugar." />
+  <meta property="og:image" content="https://tiketo.online/tiketo_og.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://tiketo.online" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Tiketo",
+    "description": "Plataforma de venda e gestão de ingressos",
+    "url": "https://tiketo.online"
+  }
+</script>
+
 </html>

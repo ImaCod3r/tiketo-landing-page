@@ -50,6 +50,7 @@ function HowItWorks() {
                         <b>Cartão de Crédito Internacional</b> - Visa, Mastercard e demais bandeiras internacionais. Para quem está em qualquer lugar do mundo.
                     </li>
                 </ul>
+                
                 <img src={new URL('../assets/payment-methods.png', import.meta.url).href} alt="Payment methods" />
 
                 <p>
