@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 function Organizers() {
     return (
         <section id="organizers">
@@ -19,7 +21,13 @@ function Organizers() {
                     <p style={{ fontSize: 12 }}>Cada ingresso emitido pela Tiketo é único, rastreável e validado na entrada em tempo real. Ingresso clonado, fraude na porta, entrada indevida — isso não passa. Você sabe exatamente quem entrou, quando entrou e por qual ponto. O seu evento, sob controle do início ao fim.</p>
                 </div>
 
-                <img src={new URL("../assets/organizer-image.jpg", import.meta.url).href} alt="organizer" />
+                <motion.img 
+                    src={new URL("../assets/organizer-image.jpg", import.meta.url).href} 
+                    alt="organizer" 
+                    initial={{ opacity: 0, y: 50 }} 
+                    whileInView={{ opacity: 1, y: 0 }} 
+                    transition={{ duration: 0.8, delay: 0.3 }} 
+                />
             </div>
         </section>
     )

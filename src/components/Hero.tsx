@@ -1,14 +1,25 @@
 import { TicketCheck } from "lucide-react";
+import { motion } from "framer-motion";
 
 function Hero() {
     return (
         <div className="hero">
             <div>
-                <h1 className="text-4xl font-bold text-white">
+                <motion.h1
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                >
                     O seu evento <br/>
                     <b>Começa aqui.</b>
-                </h1>
-                <p className="text-lg text-white">Sua nova plataforma para descobrir e garantir ingressos para as melhores experiências.</p>
+                </motion.h1>
+                <motion.p
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.4 }}
+                >
+                    Sua nova plataforma para descobrir e garantir ingressos para as melhores experiências.
+                </motion.p>
 
                 <div className="buttons">
                     <button>
@@ -18,7 +29,14 @@ function Hero() {
                 </div>
             </div>
 
-            <img src={new URL("../assets/hero-image.png", import.meta.url).href} alt="Hero" />
+            <motion.img 
+                src={new URL("../assets/hero-image.png", import.meta.url).href} 
+                alt="Hero" 
+                
+                initial={{ opacity: 0, y: 50 }} 
+                whileInView={{ opacity: 1, y: 0 }} 
+                transition={{ duration: 0.8, delay: 0.3 }} 
+            />
         </div>
     )
 }

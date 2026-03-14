@@ -304,6 +304,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
     header {
         padding-inline: 2rem;
     }
@@ -372,6 +377,10 @@ footer {
 
     section {
         padding: 2rem;
+    }
+
+    section h2 {
+        font-size: 32px;
     }
 
     footer {
