@@ -349,10 +349,23 @@ footer {
         width: 300px;
     }
 
+    section {
+        padding: 2rem;
+    }
+
+    section h2 {
+        font-size: 32px;
+    }
+
     #about .content {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
+    }
+
+    #about .content img {
+        width: 100%;
+        max-width: 200px;
     }
 
     .content {
@@ -372,14 +385,6 @@ footer {
 
     .payment-methods img {
         width: 200px;
-    }
-
-    section {
-        padding: 2rem;
-    }
-
-    section h2 {
-        font-size: 32px;
     }
 
     footer {
